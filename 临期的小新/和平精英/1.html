@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>和平精英</title>   
+ <link rel="stylesheet" href="project/bootstrap/css/bootstrap.min.css">
+ <link rel="stylesheet" href="swiper.min.css">   
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="project/bootstrap/js/jquery.min.js"></script>
+<script src="project/bootstrap/js/bootstrap.min.js"></script>
+<script src="swiper.min.js"></script>
+
+<style>
+    /* video{width:100%;height:940px;overflow:hidden;position: relative;} */
+    /* video{width:100%;min-width:1920px;position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);} */
+    *{
+        font-family: 楷体;
+    }
+    h2{
+        font-size: 40px;
+        font-family: 宋体;
+       text-align: center;
+    }
+p{
+    font-size: 25px;
+    
+}
+.nav-link{
+    font-size: 20px;
+}
+.nav-item{
+  margin-left: 20px;
+}
+
+/* .try{
+	width:100%;
+	height:200px;
+	background:rgb(255, 255, 255);
+	padding-top: 70px;
+}
+.try header{
+	width:555px;
+	height: 95px;
+	background: #e21313;
+	border-radius: 48px;
+	margin:0 auto;
+	box-sizing:border-box;
+	padding:7px 0 0 35px;
+} */
+
+    /* 设置四个并列容器的样式，各占四分之一宽度 */
+    .swiper-container {
+            width: 25%;
+            float: left;
+        }
+
+        /* 清除浮动，确保父容器能正确包裹四个轮播图容器 */
+      .swiper-container-parent {
+            overflow: hidden;
+        }
+
+        /* 轮播图内图片样式，可根据需要调整 */
+      .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+       
+    /* .ten {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    } */
+
+    .login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+.ok{
+    font-size: 55px;
+    text-align: center;
+}
+.one {
+    font-size: 17px;
+}
+h3{
+    font-size: 18px;
+}
+/* .banquan{width:100%;height:60px;background: #333333;text-align: center;}
+.banquan a{line-height: 60px;} */
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark "><!-- fixet-top -->
+        <!-- Logo区域 -->
+        <h1 class="title">
+            <a class="navbar-brand" href="#"> 
+             <img src="images/图标.png" alt="logo" width="50" height="50">
+            </a >
+          </h1>     
+        <!-- 折叠按钮区域 -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <!-- 导航列表 -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link active" href="#"><b>和平精英</b></a ></li>
+                <li class="nav-item"><a class="nav-link" href="#">版本专区</a ></li>
+                <li class="nav-item"><a class="nav-link" href="#">游戏资料</a ></li>
+                <li class="nav-item"><a class="nav-link" href="#">赛事专区</a ></li>
+                <li class="nav-item"><a class="nav-link" href="#">安全中心</a ></li>
+                <li class="nav-item"><a class="nav-link" href="#">社区论坛</a ></li>
+              </ul>       
+            <!-- 搜索输入框和搜索按钮区域 -->
+            <form action="###"  class="form-inline ml-auto">
+                <input type="text" class="form-control mr-sm-2" placeholder="和平精英官网下载" aria-label="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit" >搜索</button>
+              </form>
+            </div>
+          </nav>
+        <video autoplay="autoplay" controls="controls" loop muted style="width: 100%; "> 
+            <source src="images/11.mp4" type="video/mp4" >
+            Your browser does not support the video tag.</video>  
+
+            <div class="try">
+                <header>
+                  <!-- <img src="images/26.png" class="img-fluid" alt=""> -->
+                   <p class="ok"><b>新增内容</b></p>
+                </header>
+                </div>
+
+            <div id="carousel" class="carousel slide carousel-fade w=100" data-ride="carousel">
+                <!-- 指示器 -->
+                 <ol class="carousel-indicators">
+                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel" data-slide-to="1" ></li>
+                  <li data-target="#carousel" data-slide-to="2" ></li>
+                  <li data-target="#carousel" data-slide-to="3" ></li>
+                  <li data-target="#carousel" data-slide-to="4" ></li>
+                  <li data-target="#carousel" data-slide-to="5" ></li>
+                 
+                 </ol>
+                <!-- 轮播图片 -->
+                  <div class="carousel-inner" style="background: url(./images/1.jpeg);">
+                    <div class="carousel-item active">
+                      <img src="images/111.png" class="mx-auto d-block w-90">
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="images/222.png"  class="mx-auto d-block w-90">
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="images/333.png" class="mx-auto d-block w-90">
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="images/444.png" class="mx-auto d-block w-90">
+                      </div>
+                      <div class="carousel-item ">
+                        <img src="images/555.png" class="mx-auto d-block w-90">
+                      </div>
+                      <div class="carousel-item ">
+                        <img src="images/666.png" class="mx-auto d-block w-90">
+                      </div>
+                   
+                 <!-- 左右切换按钮 -->              
+                    <a class="carousel-control-prev  w-80" href="#carousel" data-slide="prev" >
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next  w-80" href="#carousel" data-slide="next" >
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
+              </div>
+
+              <div class="try">
+                <header>
+                  <!-- <img src="images/zhi.png" class="img-fluid" alt=""> -->
+                  <p class="ok"><b>超体职业</b></p>
+                </header>
+                </div>
+     <!-- 父容器用于包裹四个并列的轮播图容器 -->
+    <div class="swiper-container-parent">
+      <!-- 第一个Swiper轮播图容器 -->
+      <div class="swiper-container swiper1">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="images1/25.png" alt="Image 1 in Swiper 1">
+              </div>
+              <div class="swiper-slide">
+                  <img src="images1/20.png" alt="Image 2 in Swiper 1">
+              </div>
+              <div class="swiper-slide">
+                  <img src="images1/22.png" alt="Image 3 in Swiper 1">
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- 第二个Swiper轮播图容器 -->
+      <div class="swiper-container swiper2">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="images1/19.png" alt="Image 1 in Swiper 2">
+              </div>
+              <div class="swiper-slide">
+                  <img src="images1/21.png" alt="Image 2 in Swiper 2">
+              </div>
+              <div class="swiper-slide">
+                  <img src="images1/23.png" alt="Image 3 in Swiper 2">
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- 第三个Swiper轮播图容器 -->
+      <div class="swiper-container swiper3">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="images1/20.png" alt="Image 1 in Swiper 3">
+              </div>
+              <div class="swiper-slide">
+                  <img src="images1/22.png" alt="Image 2 in Swiper 3">
+              </div>
+              <div class="swiper-slide">
+                  <img src="images1/24.png" alt="Image 3 in Swiper 3">
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- 第四个Swiper轮播图容器 -->
+      <div class="swiper-container swiper4">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="images1/21.png" alt="Image 1 in Swiper 4">
+              </div>
+              <div class="swiper-slide">
+                  <img src="images1/23.png" alt="Image 2 in Swiper 4">
+              </div>
+              <div class="swiper-slide">
+                  <img src="images1/25.png" alt="Image 3 in Swiper 4">
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+  </div>
+
+  <script>
+    // 初始化第一个Swiper实例
+    var swiper1 = new Swiper('.swiper1', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+    // 初始化第二个Swiper实例
+    var swiper2 = new Swiper('.swiper2', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+    // 初始化第三个Swiper实例
+    var swiper3 = new Swiper('.swiper3', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+    // 初始化第四个Swiper实例
+    var swiper4 = new Swiper('.swiper4', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+
+
+<div class="try">
+    <header>
+      <!-- <img src="images/31.png" class="img-fluid" alt=""> -->
+      <p class="ok"><b>版本中心</b></p>
+    </header>
+    </div>
+
+      <div class="container">
+        <div class="row">
+            <!-- 文字区域 -->
+            <div class="col-md-6">
+                <h2>新春园林 </h2>
+                <p><b>更新内容:</b></p >
+                    <p>玩法模式:鲤鱼跃龙门、年画祈福、家园玩法</p>
+                    <p>新增场景：新春园林</p>
+                    <p>新增枪械:M200狙击枪</p>
+                    <p>新增道具:锦鲤罗盘、战术瞄准镜</p>
+                    <p>新增载具:纸鸢飞行器</p>
+            </div>
+            <!-- 视频播放区域 -->
+            <div class="col-md-6">
+                <h2>video </h2>
+                <video width="100%"   autoplay  controls loop muted >
+                    <source src="images/5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- 视频播放区域 -->
+            <div class="col-md-6" >
+                <h2>video </h2>
+                <video width="100%"   autoplay  controls loop muted >
+                    <source src="images/01.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+             <!-- 文字区域 -->
+             <div class="col-md-6">
+                <h2>重启未来 </h2>
+                <p ><b>更新内容:</b></p >
+                    <p>玩法模式:主题玩法-重启未来，玩法升级-谁是内鬼</p>
+                    <p>新增场景:矩阵工业</p>
+                    <p>新增道具:黑刃机械单兵BH-02,黑刃侦查机器犬BD-86</p>
+                    <p>新增道具:反重力摩托G-39</p>
+                    <p> 系统优化:战斗体验优化，团竞设置优化，性能优化，安全优化等</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- 文字区域 -->
+            <div class="col-md-6">
+                <h2>流浪地球 </h2>
+                <p ><b>更新内容:</b></p >
+                    <p> 主题场景:流浪地球主题城区-太空电梯、矿场</p>
+                    <p> 新载具:钢铁蟑螂UEG E9-208</p>
+                    <p>新道具:DOGS、安全气囊、门框机器人</p>
+                    <p> 玩法更新:超体对抗2.0更新、新导师-源代码</p>
+                    <p>新玩法：奇幻 乱 、地铁逃生-限时4V4玩法、刺激战场-征服模式</p>
+            </div>
+            <!-- 视频播放区域 -->
+            <div class="col-md-6">
+                <h2>video </h2>
+                <video width="100%"   autoplay  controls loop muted >
+                    <source src="images/02.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+       
+    <div class="container">
+        <div class="row">
+            <!-- 视频播放区域 -->
+            <div class="col-md-6" >
+                <h2>video </h2>
+                <video width="100%"   autoplay  controls loop muted >
+                    <source src="images/13.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+             <!-- 文字区域 -->
+             <div class="col-md-6">
+                <h2>龙跃长城 </h2>
+                <p ><b>更新内容:</b></p >
+                    <p>新增载具:马、龙腾战车</p>
+                    <p>新增枪械:Famas突击步枪</p>
+                    <p>超体对抗新导师：雷枪少年</p>
+                    <p> 团队竞技新玩法：步枪团免</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="try">
+            <header>
+              <!-- <img src="images/01.png" class="img-fluid" alt=""> -->
+              <p class="ok"><b>安全中心</b></p>
+            </header>
+            </div>
+
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-6" style="height: 400px;">
+                    <div class="login-form">
+                        <div class="form-group">
+                            <label for="username">用户名</label>
+                            <input type="text" class="form-control" id="username" placeholder="田银亮">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">学号</label>
+                            <input type="password" class="form-control" id="password" placeholder="22013210166">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="remember-me">
+                            <label class="form-check-label" for="remember-me">记住学号</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">立即登录</button>
+                        忘记学号
+                        <p>没有账号？立即注册</p >
+                    </div>
+                </div>
+                <div class="col-md-6" >
+                    <h2>ZT </h2>
+                    <img src="images/60.png" alt="" class="img-fluid" >
+                </div>
+            </div>
+        </div>
+
+
+<footer class="bg-dark  text-light text-center">
+    <div class="container">
+      <h3>合作伙伴</h3>
+      <ul class="fa-ul">
+        <li class="list-inline-item"><a href="#"><i class="fa fa-apple fa-2x text-white" 
+          aria-hidden="true"></i></a></li>
+    
+          <li class="list-inline-item"><a href="#"><i class="fa fa-qq fa-2x text-white" 
+            aria-hidden="true"></i></a></li>
+    
+            <li class="list-inline-item"><a href="#"><i class="fa fa-weixin fa-2x text-white" 
+              aria-hidden="true"></i></a></li>
+    
+              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x text-white" 
+                aria-hidden="true"></i></a></li>
+      </ul> 
+    <p class="m-1" style="font-size: 18px;">腾讯互动娱乐 | 版权合作 | 光子工作室</p>
+    <p class="one">抵制不良游戏  注意自我保护  适度游戏益脑  享受健康生活</p>
+    </div>
+    </footer>
+    
+
+    </body>
+</html>
